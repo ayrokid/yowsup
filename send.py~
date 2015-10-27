@@ -10,11 +10,22 @@ cursorclass=MySQLdb.cursors.DictCursor) # name of the data base
 
 credentials = ['6281390688955', 'Ga3lQvVTvzt10PlCGC/W5MAJfuE=']
 
+data = []
+
 try:
+    cur = db.cursor()
+    cur.execute("select * from messages")
+    results = cur.fetchall()
+    i = 0;
+    for row in results:
+       data.append([ row['sender'], row['content'] ])
+       i += 1
+    
     stack = sendclient.YowsupSendStack(
         credentials,
-        [(['6285725523023', 'pesan dari ubuntu']), (['6285728825287', 'pesan dari ubuntu 14.04'])]
+        data
     )
     stack.start()
+    print('\nKirim Sukses..')
 except KeyboardInterrupt:
     print('\nYowsdown')

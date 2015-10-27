@@ -17,5 +17,5 @@ message  = message2.replace("']","")
 
 cur = db.cursor()
 cur.execute("""
-INSERT INTO message (sender, message, created_at) VALUES (%s,%s, NOW())""", (sender, message, ))
+INSERT INTO messages (sender, content, created_at) VALUES (%s,%s, NOW())""", (sender, message, ))
 cur.execute("COMMIT")
