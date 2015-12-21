@@ -1,7 +1,7 @@
 1. download : https://github.com/ayrokid/yowsup
 2. wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python
 3. sudo apt-get install python-pip
-4. pip install requests-oauth
+4. sudo pip install requests-oauth
 5. sudo python setup.py install
 6. sudo apt-get install python-mysqldb or # pip install mysql-python
 
@@ -17,7 +17,7 @@
    method: sms
 9. Registering the Code
    You will receive a message with the registration code and it will be in this format XXX-XXX
-   # ./yowsup-cli --register XXX-XXX --config yowsup-cli.config
+   # ./yowsup-cli registration --register XXX-XXX --config yowsup-cli.config
 
    Immedaitely, you will receive something on your terminal close to what is below here :
    status: ok
@@ -43,4 +43,18 @@
 
 
 reverensi : http://kennethkinyanjui.info/whatsapp-on-laptop.html
+
+//data m3 :
+status: ok
+kind: free
+pw: T1ztlUvDODxa2+JLIi+Yhlnhc6Y=
+price: Rp9500
+price_expiration: 1453579018
+currency: IDR
+cost: 9500.00
+expiration: 1469447542
+login: 6285725523023
+type: existing
+
+
 

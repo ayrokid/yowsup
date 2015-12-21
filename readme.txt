@@ -1,7 +1,7 @@
 1. download : https://github.com/ayrokid/yowsup
 2. wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python
 3. sudo apt-get install python-pip
-4. pip install requests-oauth
+4. sudo pip install requests-oauth
 5. sudo python setup.py install
 6. sudo apt-get install python-mysqldb or # pip install mysql-python
 
@@ -43,4 +43,11 @@
 
 
 reverensi : http://kennethkinyanjui.info/whatsapp-on-laptop.html
+
+note : 
+jika python setup.py install error coba install :
+pip install https://pypi.python.org/packages/source/p/python-axolotl/python-axolotl-0.1.7.tar.gz
+
+
+
 
